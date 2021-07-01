@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <dependencies>
@@ -276,7 +277,22 @@
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>4.2.3</version>
             </plugin>
+
+            <!-- Maven release plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
         </plugins>
+
+        <extensions>
+            <extension>
+                <groupId>io.packagecloud.maven.wagon</groupId>
+                <artifactId>maven-packagecloud-wagon</artifactId>
+                <version>0.0.6</version>
+            </extension>
+        </extensions>
     </build>
 
     <reporting>
@@ -295,5 +311,21 @@
 
         </plugins>
     </reporting>
+
+    <distributionManagement>
+        <repository>
+            <id>packagecloud-releases</id>
+            <url>packagecloud+https://packagecloud.io/vikaswarkar/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>packagecloud-snapshots</id>
+            <url>packagecloud+https://packagecloud.io/vikaswarkar/snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <url>https://github.com/vikaswarkar/HelloWorld</url>
+        <developerConnection>scm:git:https://github.com/vikaswarkar/HelloWorld.git</developerConnection>
+    </scm>
 
 </project>

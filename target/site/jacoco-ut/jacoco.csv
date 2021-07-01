@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-HelloWorld,default,HelloWorld,34,0,2,0,10,0,5,0,4,0
-HelloWorld,com.example.pojo,PersonExample,116,0,4,0,22,0,14,0,12,0
-HelloWorld,generated,Shiporder.Item,31,0,0,0,13,0,9,0,9,0
-HelloWorld,generated,Shiporder,35,0,2,0,13,0,9,0,8,0
-HelloWorld,generated,ObjectFactory,15,0,0,0,5,0,4,0,4,0
-HelloWorld,generated,Shiporder.Shipto,31,0,0,0,13,0,9,0,9,0
