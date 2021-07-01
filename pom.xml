@@ -312,11 +312,11 @@
 
     <distributionManagement>
         <repository>
-            <id>packagecloud-releases</id>
+            <id>packagecloud.releases</id>
             <url>packagecloud+https://packagecloud.io/vikaswarkar/release</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud-snapshots</id>
+            <id>packagecloud.snapshots</id>
             <url>packagecloud+https://packagecloud.io/vikaswarkar/snapshot</url>
         </snapshotRepository>
     </distributionManagement>
